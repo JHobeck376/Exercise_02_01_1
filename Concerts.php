@@ -33,6 +33,13 @@
         echo "$concerts[4]<br>";
         echo "$concerts[5]<br>";
         echo "$concerts[6]<br>";
+    
+        echo "<pre>";
+        print_r($concerts);
+        echo "</pre>";
+        echo "<pre>";
+        var_dump($concerts);
+        echo "</pre>";
     ?>
     
 </body>
