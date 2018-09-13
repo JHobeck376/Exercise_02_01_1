@@ -19,16 +19,26 @@
         <h2>Is Even</h2>
         <?php
             $numbersArray = array(rand(), rand(), rand(), rand(), rand(), rand(), rand(), rand(), rand(), rand());
-            echo "$numbersArray[0] ", (is_float($numbersArray[0] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[1] ", (is_float($numbersArray[1] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[2] ", (is_float($numbersArray[2] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[3] ", (is_float($numbersArray[3] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[4] ", (is_float($numbersArray[4] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[5] ", (is_float($numbersArray[5] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[6] ", (is_float($numbersArray[6] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[7] ", (is_float($numbersArray[7] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[8] ", (is_float($numbersArray[8] / 2)) ? "is an odd number." : "is an even number.", "<br>";
-            echo "$numbersArray[9] ", (is_float($numbersArray[9] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[0] ", (is_float($numbersArray[0] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[1] ", (is_float($numbersArray[1] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[2] ", (is_float($numbersArray[2] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[3] ", (is_float($numbersArray[3] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[4] ", (is_float($numbersArray[4] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[5] ", (is_float($numbersArray[5] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[6] ", (is_float($numbersArray[6] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[7] ", (is_float($numbersArray[7] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[8] ", (is_float($numbersArray[8] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+//            echo "$numbersArray[9] ", (is_float($numbersArray[9] / 2)) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[0] ", ($numbersArray[0] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[1] ", ($numbersArray[1] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[2] ", ($numbersArray[2] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[3] ", ($numbersArray[3] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[4] ", ($numbersArray[4] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[5] ", ($numbersArray[5] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[6] ", ($numbersArray[6] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[7] ", ($numbersArray[7] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[8] ", ($numbersArray[8] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
+            echo "$numbersArray[9] ", ($numbersArray[9] % 2 == 1) ? "is an odd number." : "is an even number.", "<br>";
         ?>
 	</body>
 </html>
