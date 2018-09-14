@@ -13,7 +13,10 @@
         <?php
             $faceNamesSingular = array("one", "two", "three", "four", "five", "six");
             $faceNamesPlural = array("ones", "twos", "threes", "fours", "fives", "sixs");
-        
+            $doublesCount = 0;
+            $rollNumber = 1;
+            define("NBR_ROLLS", 10);
+            
             // function to check for doubles
             function checkForDoubles($die1, $die2) {
                 global $faceNamesSingular;
@@ -37,11 +40,12 @@
                     switch ($score) {
                         case 2: {
                             echo "You rolled snake eyes";
+                            break;
                         }
                         case 12: {
                             echo "You rolled box cars!<br>";
+                            break;
                         }
-                        break;
                     }
                 }else {
                     if ($score === 3){
@@ -64,14 +68,21 @@
             }
         
             $dice = array();
-            $dice[0] = rand(1,6);
-            $dice[1] = rand(1,6);
-            echo "<p>";
-            $score = $dice[0] + $dice[1];
-            echo "The total score for the roll was $score.<br>";
-            $doubles = checkForDoubles($dice[0], $dice[1]);
-            echo "</p>";
-            displayScoreText($score, $doubles);
+            while ($rollNumber <= NBR_ROLLS) {
+                $dice[0] = rand(1,6);
+                $dice[1] = rand(1,6);
+                echo "<p>";
+                $score = $dice[0] + $dice[1];
+                echo "The total score for the roll was $score.<br>";
+                $doubles = checkForDoubles($dice[0], $dice[1]);
+                displayScoreText($score, $doubles);
+                echo "</p>";
+                if ($doubles) {
+                    ++$doublesCount;
+                }
+                ++$rollNumber;
+            }
+        echo "<p>Doubles occured on $doublesCount of the " . NBR_ROLLS . " rolls.</p>";
         ?>
 	</body>
 </html>
