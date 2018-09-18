@@ -13,7 +13,12 @@
         <?php
             $intVariable = 75;
             $result = "";
-            ($intVariable > 100) ? $result = '$intVariable is greater than 100' : $result = '$intVariable is less than or equal to 100';
+//            ($intVariable > 100) ? $result = '$intVariable is greater than 100' : $result = '$intVariable is less than or equal to 100';
+            if($intVariable >= 100) {
+                $result = '$intVariable is greater than or equal to 100';
+            } else {
+                $result = '$intVariable is less than 100';
+            }
             echo '<h3>$result: ' . "$result</h3>";
         ?>
 	</body>
