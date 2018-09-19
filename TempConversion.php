@@ -11,9 +11,12 @@
 	<body>
         <h2>Temperature Conversion</h2>
         <?php
-            $fahrenheit[] = "";
-            for ($i = 0; $i < 100; $i++) {
-                $celsius = $
+            $fahrenheit = array();
+            // for loop to number 0 - 100 for temp conversions
+            for ($i = 0; $i < 101; $i++) {
+                $fahrenheit[$i] = $i;
+                $celsius = ($fahrenheit[$i] - 32) * (5/9);
+                echo "$fahrenheit[$i] degrees Fahrenheit is ", number_format($celsius, 3), " degrees Celsius.<br>";
             }
         ?>
 	</body>

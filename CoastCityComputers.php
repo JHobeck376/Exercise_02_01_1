@@ -10,6 +10,7 @@
 
 	<body>
         <?php
+            // calls in other php file for more HTML
             include("inc_header.php");
         ?>
         <h2>Memorial Day Sale</h2>

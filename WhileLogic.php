@@ -12,10 +12,12 @@
         <h2>While Logic</h2>
         <?php
             $counter = 1;
+            // counts through the first 100 numbers
             while ($counter <= 100) {
                 $numbers[] = $counter;
                 ++$counter;
             }
+            // displays the numbers
             foreach ($numbers as &$currentNumber) {
                 echo "$currentNumber<br>";
             }
